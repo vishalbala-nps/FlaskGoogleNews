@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Table Test</title>
+</head>
+
+<body>
+    <p>Hi!</p>
+    <table style="white-space:pre-wrap; word-wrap:break-word">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>More Info Link</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in title %}
+            <tr>    
+                <td>{{ i }}</td>
+                <td>{{ author[loop.index0] }}</td>
+                <td>{{ link[loop.index0] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
