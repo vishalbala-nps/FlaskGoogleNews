@@ -4,22 +4,59 @@
 </head>
 
 <body>
-    <p>Hi!</p>
-    <table style="white-space:pre-wrap; word-wrap:break-word">
+    <h1>Linux News</h1>
+    <table>
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Author</th>
-                <th>More Info Link</th>
             </tr>
         </thead>
 
         <tbody>
-            {% for i in title %}
+            {% for i in titlelinux %}
             <tr>    
-                <td>{{ i }}</td>
-                <td>{{ author[loop.index0] }}</td>
-                <td>{{ link[loop.index0] }}</td>
+                <td><a href="{{ linkandroid[loop.index0] }}">{{ i }}</a></td>
+                <td>{{ authorlinux[loop.index0] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Open-Source News</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in titleos %}
+            <tr>    
+                <td><a href="{{ linkandroid[loop.index0] }}">{{ i }}</a></td>
+                <td>{{ authoros[loop.index0] }}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Android News</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in titleandroid %}
+            <tr>    
+                <td><a href="{{ linkandroid[loop.index0] }}">{{ i }}</a></td>
+                <td>{{ authorandroid[loop.index0] }}</td>
             </tr>
             {% endfor %}
         </tbody>
