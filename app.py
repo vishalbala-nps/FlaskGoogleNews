@@ -27,7 +27,7 @@ app = Flask(__name__)
 @app.route('/') 
 def main():
     news = get_news()
-    return render_template('abc.html', linux=news[0], android=news[1], os=news[2])
+    return render_template('index.html', linux=news[0], android=news[1], os=news[2])
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
