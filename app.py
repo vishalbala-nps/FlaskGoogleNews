@@ -4,7 +4,6 @@ from time import sleep
 
 import requests
 import json
-import wget
 
 #Global Vars
 API_KEY = "fa240576ba8e4d3f9435ec13a026c0ef"
