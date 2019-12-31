@@ -25,35 +25,35 @@
   
   <div class="container text-center">
     <div class="row">
-      <div class="col-sm-4 scrollclass">
+      <div class="col-sm-4 nopadding">
         <h3>Linux</h3>
         <ul>
             {% for i in linux %}
             <li class="list-group-item">
                 <a href="{{ linux[loop.index0]['url'] }}">{{ linux[loop.index0]['title'] }}</a>
-                <p>{{ linux[loop.index0]['description'] }}</p>
+                <p class="text-justify">{{ linux[loop.index0]['description'] }}</p>
             </li>
             {% endfor %}
         </ul>
       </div>
-      <div class="col-sm-4 scrollclass">
+      <div class="col-sm-4 nopadding">
         <h3>Open-Source</h3>
         <ul>
             {% for i in os %}
             <li class="list-group-item">
                 <a href="{{ os[loop.index0]['url'] }}">{{ os[loop.index0]['title'] }}</a>
-                <p>{{ os[loop.index0]['description'] }}</p>
+                <p class="text-justify">{{ os[loop.index0]['description'] }}</p>
             </li>
             {% endfor %}
         </ul>
       </div>
-      <div class="col-sm-4 scrollclass">
+      <div class="col-sm-4 nopadding">
         <h3>Android</h3>        
         <ul>
             {% for i in android %}
             <li class="list-group-item">
                 <a href="{{ android[loop.index0]['url'] }}">{{ android[loop.index0]['title'] }}</a>
-                <p>{{ android[loop.index0]['description'] }}</p>
+                <p class="text-justify">{{ android[loop.index0]['description'] }}</p>
             </li>
             {% endfor %}
         </ul>
